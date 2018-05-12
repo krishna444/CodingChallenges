@@ -31,7 +31,6 @@ class Iterations {
         return Math.max(gap, count);
     }
 
-
 }
 
 
