@@ -23,5 +23,5 @@ let arrays=new Arrays();
 //let rotatedArray=arrays.cyclicRotation([3,8,9,7,6,3],4);
 //console.log(rotatedArray);
 
-let odd=arrays.oddOccurrencesInArray([1,2,5,6,1,8,2,6,8,5,9,1]);
+let odd=arrays.oddOccurrencesInArray([1,2,5,6,1,8,2,6,8,5,9,]);
 console.log(odd);
