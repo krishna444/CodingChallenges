@@ -16,7 +16,7 @@ class Sorting {
     }
 
     mergeSort(A) {
-        
+
         if (A.length < 2) {
             return A;
         }
@@ -30,24 +30,33 @@ class Sorting {
             right[i - mid] = A[i];
         }
 
-        this.mergeSort(left);
-        this.mergeSort(right);
-        return this.merge(left,right);
+        return this.merge(this.mergeSort(left), this.mergeSort(right));
     }
-
-    merge(left, right){
-        for(let i=0;i<left.length;i++){
-            for(let j=0;j<right.length;j++){
-                if(left[i]>right[j]){
-                    let tmp=left[i];
-                    left[i]=right[j];
-                    right[j]=tmp;
-                }
-            }            
+    merge(left, right) {
+        let merged = new Array(left.length + right.length);
+        let mergedIndex = 0;
+        while (left.length > 0 && right.length > 0) {
+            if (left[0] > right[0]) {
+                merged[mergedIndex++] = right[0];
+                right.splice(0, 1);
+            } else {
+                merged[mergedIndex++] = left[0];
+                left.splice(0, 1);
+            }
         }
-        console.log(left.concat(right));
-        return left.concat(right);
 
+        while (left.length > 0) {
+            merged[mergedIndex++] = left[0];
+            left.splice(0, 1);
+        }
+
+        while (right.length > 0) {
+            merged[mergedIndex++] = right[0];
+            right.splice(0, 1);
+        }
+        
+        console.log("."+mergedIndex);
+        return merged;
     }
 
     quickSort(A) {
@@ -56,8 +65,8 @@ class Sorting {
 
     createRandomArray(size) {
         let array = new Array(size);
-        while (size >= 0) {
-            array.push(Math.trunc(Math.random() * 100));
+        while (size > 0) {
+            array[size - 1] = Math.trunc(Math.random() * 1000);
             size--;
         }
         return array;
@@ -72,7 +81,7 @@ console.timeEnd("bubble sort");
 */
 
 console.time("merge");
-let mergeSort=sorting.mergeSort(sorting.createRandomArray(10));
+let mergeSort = sorting.mergeSort(sorting.createRandomArray(1000000));
 console.log(mergeSort);
 console.timeEnd("merge");
 
