@@ -108,11 +108,12 @@ class Tree {
 }
 console.log(Node);
 let tree = new Tree();
-tree.add(12);
+tree.add(27);
 tree.add(14);
 tree.add(18);
 tree.add(10);
 tree.add(11);
+tree.add(19);
 //tree.preOrder();
 //tree.inOrder();
 //tree.postOrder();
