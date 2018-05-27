@@ -2,6 +2,7 @@ class RootOfNumber {
 
     /**
      * Estimates the nth root of a given number
+     * Especial attention when 0<=x<1 
      */
     public double rootOfNumber(double x, int n) {
         if (x < 1) //Case of 0<=x<=1 is different
