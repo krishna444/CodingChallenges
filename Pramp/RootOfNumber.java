@@ -4,7 +4,7 @@ class RootOfNumber {
      * Estimates the nth root of a given number
      */
     public double rootOfNumber(double x, int n) {
-        if (x < 1)
+        if (x < 1) //Case of 0<=x<=1 is different
             return search(x, 1, x, n);
         else
             return search(0, x, x, n);
@@ -16,7 +16,6 @@ class RootOfNumber {
         double threshold = 0.0001;
         for (int i = 0; i < n; i++) {
             checkValue *= estimation;
-       //     threshold *= 0.0001;
         }
         System.out.println(
                 "lower=" + lower + "upper=" + upper + " estimation=" + estimation + " checkValue=" + checkValue);
