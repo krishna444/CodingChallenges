@@ -100,5 +100,6 @@ public class Problem_201805 {
         // System.out.println(result);
         int result[] = problems.productOfAllNumbersExceptItself(new int[] { 1, 2, 3, 4, 5 });
         System.out.println(Arrays.toString(result));
+        
     }
 }
