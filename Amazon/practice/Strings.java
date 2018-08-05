@@ -1,5 +1,3 @@
-package com.krishna.amazon.practice;
-
 import java.util.Arrays;
 
 public class Strings {

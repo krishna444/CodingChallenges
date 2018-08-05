@@ -1,4 +1,3 @@
-package com.krishna.amazon;
 
 public class MyStack {
 	private LinkNode top;

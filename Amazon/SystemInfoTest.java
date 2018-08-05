@@ -1,4 +1,4 @@
-package com.krishna.amazon;
+
 /*
  * #%L
  * **********************************************************************
@@ -32,7 +32,6 @@ import com.pi4j.platform.PlatformManager;
 import com.pi4j.system.NetworkInfo;
 import com.pi4j.system.SystemInfo;
 
-
 import java.io.IOException;
 import java.text.ParseException;
 
@@ -65,7 +64,7 @@ public class SystemInfoTest {
 			System.out.println("Serial Number     :  " + SystemInfo.getSerial());
 		} catch (UnsupportedOperationException ex) {
 		}
-		
+
 		try {
 			System.out.println("CPU Revision      :  " + SystemInfo.getCpuRevision());
 		} catch (UnsupportedOperationException ex) {
@@ -264,8 +263,6 @@ public class SystemInfoTest {
 			System.out.println("DPI Frequency     :  " + SystemInfo.getClockFrequencyDPI());
 		} catch (UnsupportedOperationException ex) {
 		}
-		
-		
 
 		System.out.println();
 		System.out.println();

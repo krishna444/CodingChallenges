@@ -1,5 +1,3 @@
-package com.krishna.amazon;
-
 import java.util.Arrays;
 
 public class BinarySearchTree {

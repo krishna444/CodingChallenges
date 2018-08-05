@@ -1,4 +1,3 @@
-package com.krishna.amazon;
 
 /**
  * Queue implementation

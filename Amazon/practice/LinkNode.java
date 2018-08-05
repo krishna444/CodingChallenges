@@ -1,4 +1,3 @@
-package com.krishna.amazon;
 
 public class LinkNode {
 	public int value;

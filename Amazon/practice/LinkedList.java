@@ -1,4 +1,3 @@
-package com.krishna.amazon;
 
 public class LinkedList {
 	public LinkNode head;
