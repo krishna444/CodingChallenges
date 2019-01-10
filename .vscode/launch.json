@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+<<<<<<< HEAD
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${file}"
+=======
             "name": "Java",
             "type": "java",
             "request": "launch",
@@ -47,6 +53,7 @@
             "request": "attach",
             "hostName": "localhost",
             "port": 0
+>>>>>>> 6cc16a9d53a05cbbbd8b7d99812ce36c25b610fa
         }
     ]
 }

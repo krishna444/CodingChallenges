@@ -2,6 +2,11 @@
     "git.autofetch": true,
     "editor.fontSize": 18,
     "editor.fontFamily": "'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+<<<<<<< HEAD
+    "editor.fontWeight": "normal",
+    "jshint.enable": true,
+    "python.linting.pylintEnabled": false
+=======
     "editor.fontWeight": "400",
     "python.linting.pylintEnabled": false,
     "files.exclude": {
@@ -12,4 +17,5 @@
         "**/.DS_Store": true,
         "**/*.class":true
     }
+>>>>>>> 6cc16a9d53a05cbbbd8b7d99812ce36c25b610fa
 }
