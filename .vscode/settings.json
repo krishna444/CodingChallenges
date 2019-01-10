@@ -1,8 +1,15 @@
 {
     "git.autofetch": true,
-    "editor.fontSize": 17,
+    "editor.fontSize": 18,
     "editor.fontFamily": "'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
-    "editor.fontWeight": "normal",
-    "jshint.enable": true,
-    "python.linting.pylintEnabled": false
+    "editor.fontWeight": "400",
+    "python.linting.pylintEnabled": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.class":true
+    }
 }
