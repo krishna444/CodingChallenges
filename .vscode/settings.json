@@ -3,5 +3,6 @@
     "editor.fontSize": 17,
     "editor.fontFamily": "'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
     "editor.fontWeight": "normal",
-    "jshint.enable": true
+    "jshint.enable": true,
+    "python.linting.pylintEnabled": false
 }
